@@ -1,0 +1,18 @@
+{
+  "name": "dwproject",
+  "authors": [
+    "sontaya <sontaya.yam@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "http://datacenter.dusit.ac.th/DW",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets",
+    "test",
+    "tests"
+  ]
+}
