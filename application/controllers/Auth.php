@@ -8,7 +8,7 @@ class Auth extends MY_Controller
 		parent::__construct();
 
     // $this->load->model('Ceremony_model');
-    $this->load->model('Practice_model');
+    $this->load->model('Ceremony_model');
     $this->load->model('Ceremonylog_model');
 
     // if(! $this->session->userdata('uid'))
@@ -23,7 +23,7 @@ class Auth extends MY_Controller
 
 	public function index()
 	{
-    $data['title'] = "Login | กำหนดการซ้อมย่อย รับพระราชทานปริญญาบัตร ประจำปี 2559-2560 มหาวิทยาลัยสวนดุสิต";
+    $data['title'] = "Login | แบบสำรวจบัณฑิตเพื่อเข้ารับพระราชทานปริญญาบัตร ประจำปี 2563-2564";
     $this->load->view('login',$data);
 	}
 
@@ -44,7 +44,7 @@ class Auth extends MY_Controller
         'AUTH_IDCARD' => $this->input->post('passwd')
     );
 
-    $response = $this->Practice_model->list(array('conditions'=>$conditions));
+    $response = $this->Ceremony_model->list(array('conditions'=>$conditions));
 
     if($response == false){
         header('Content-Type: application/json');

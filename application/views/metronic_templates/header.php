@@ -1,7 +1,7 @@
 	<head>
 		<base href="">
 		<meta charset="utf-8" />
-		<title> <?= $title ?> | แบบสำรวจยืนยันการเข้ารับพระราชทาน ปริญญาบัตรประจำปี 2560 – 2562 </title>
+		<title> <?= $title ?> | แบบสำรวจบัณฑิตเพื่อเข้ารับพระราชทานปริญญาบัตร ประจำปี 2563-2564 </title>
 		<meta name="description" content="Latest updates and statistic charts">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

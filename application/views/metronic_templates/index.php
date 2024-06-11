@@ -125,7 +125,7 @@
 						<div class="kt-container ">
 							<div class="kt-footer__wrapper">
 								<div class="kt-footer__copyright">
-									2022&nbsp;&copy;&nbsp;<a href="http://www.dusit.ac.th" target="_blank" class="kt-link">มหาวิทยาลัยสวนดุสิต</a>
+									<?= date("Y") ?>&nbsp;&copy;&nbsp;<a href="http://www.dusit.ac.th" target="_blank" class="kt-link">มหาวิทยาลัยสวนดุสิต</a>
 								</div>
                                 <div class="kt-footer--fixed">
 									ออกแบบและพัฒนาโดย ฝ่ายศูนย์ข้อมูลกลาง สำนักวิทยบริการและเทคโนโลยีสารสนเทศ

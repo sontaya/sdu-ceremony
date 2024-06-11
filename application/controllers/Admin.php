@@ -25,7 +25,7 @@ class Admin extends MY_Controller
 	}
 
     function index(){
-        redirect('admin/practice_dashboard');
+        redirect('admin/dashboard');
     }
 
 	function dashboard(){
@@ -69,7 +69,7 @@ class Admin extends MY_Controller
                                                     ,SUM(CASE WHEN ((GRAD_CONFIRM_STATUS = 'Y' OR GRAD_CONFIRM_STATUS IS NULL) AND (STD_CONFIRM_STATUS IS NULL)) THEN 1 ELSE 0 END) AS COUNT_TENTATIVE
                                                     ,SUM(CASE WHEN STD_CONFIRM_STATUS = 'Y' THEN 1 ELSE 0 END) AS COUNT_OK
                                                     ,SUM(CASE WHEN STD_CONFIRM_STATUS = 'N' THEN 1 ELSE 0 END) AS COUNT_NO
-                                                FROM GRADUATE_CEREMONY65") ;
+                                                FROM GRADUATE_CEREMONY_6364") ;
         $res = $query_summary->result_array();
 
         header('Content-Type: application/json');
@@ -97,7 +97,7 @@ class Admin extends MY_Controller
         $query_summary = $this->db->query("SELECT STD_ORDER,STD_CODE,
                                                     PREFIX_NAME_TH||FIRST_NAME_TH||' '||LAST_NAME_TH AS FULLNAME
                                                     ,DEGREENAMETH, GRAD_CONFIRM_STATUS, STD_CONFIRM_STATUS, STD_CONFIRM_DATE
-                                                FROM GRADUATE_CEREMONY65") ;
+                                                FROM GRADUATE_CEREMONY_6364") ;
         $res = $query_summary->result_array();
 
         header('Content-Type: application/json');
