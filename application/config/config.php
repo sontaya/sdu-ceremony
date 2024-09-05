@@ -331,7 +331,8 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = 'th.ac.dusit';
+$config['encryption_key'] = 'th.ac.dusit.commencement';
+$config['encryption_method'] = 'AES-256-CBC';
 
 /*
 |--------------------------------------------------------------------------

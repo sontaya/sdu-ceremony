@@ -59,10 +59,10 @@
 										<div class="kt-login__form">
 											<form class="kt-form" action="" id="kt_login_form">
 												<div class="form-group">
-													<input class="form-control" type="text" placeholder="รหัสนักศึกษา" name="username" id="input_username" autocomplete="off" value="">
+													<input class="form-control" type="text" placeholder="รหัสนักศึกษา" name="username" id="input_username" autocomplete="off" value="6111080320014">
 												</div>
 												<div class="form-group">
-													<input class="form-control form-control-last" type="text" placeholder="หมายเลขบัตรประจำตัวประชาชน" name="password" id="input_password" autocomplete="off" value="">
+													<input class="form-control form-control-last" type="text" placeholder="หมายเลขบัตรประจำตัวประชาชน" name="password" id="input_password" autocomplete="off" value="1329900946508">
 												</div>
 
 												<div class="kt-login__actions">
@@ -82,23 +82,21 @@
 					<div class="kt-grid__item kt-grid__item--fluid kt-grid__item--center kt-grid kt-grid--ver kt-login__content" style="background-image: url(<?= base_url('assets/themes/metronic10/assets/media/bg/bg-sdu.jpg'); ?>);">
 						<div class="kt-login__section">
 							<div class="kt-login__block">
-								<h5 class="kt-login__title" style="text-align:center;">กำหนดการรับพระราชทานปริญญาบัตร ประจำปี 2565 <br /> (ซ้อมย่อย / ซ้อมใหญ่ / รับจริง)</h5>
-								<div class="kt-login__desc">
+								<h5 class="kt-login__title" style="text-align:center;">กำหนดการซ้อมใหญ่ และรับพระราชทานปริญญาบัตร <br /> ประจำปี 2567 </h5>
+								<div class="kt-login__desc ml-5">
 
-										 <ul>
-											<li>พิธีรับพระราชทานปริญญาบัตร จะจัดให้มีขึ้นในวันที่ 26 กันยายน 2567</li>
-											<li>พิธีรับพระราชทานปริญญาบัตร จะจัดพิธีที่มหาวิทยาลัยราชภัฏนครปฐม จังหวัดนครปฐม</li>
-											<li>บัณฑิตทุกท่านต้องผ่านการซ้อมย่อย ส่วนกลางซ้อมที่ อาคารมหาวชิราลงกรณ ถนนสิรินธร (ช่วงวันเสาร์หรืออาทิตย์ เดือนสิงหาคม ท่านละ 1 ครั้ง) <br> ส่วนภูมิภาค ณ ศูนย์ลำปาง และศูนย์ตรัง (ตามวัน และเวลาที่ศูนย์กำหนด)</li>
-											<li>บัณฑิตทุกท่านต้องผ่านการซ้อมใหญ่ (สวมชุดครุย) ณ มหาวิทยาลัยสวนดุสิต (ท่านละ 1 ครั้ง ก่อนวันเข้ารับพระราชทานฯ ไม่เกิน 1 สัปดาห์)</li>
-											<li>รายละเอียดการฝึกซ้อมเฉพาะบุคคลจะแจ้งให้ทราบทางเว็บไซด์ www.dusit.ac.th ตั้งแต่วันที่ xxxxxxxxxx เป็นต้นต่อไป</li>
-											<li class="text-warning">บัณฑิตสามารถยืนยันการเข้ารับพระราชทานปริญญาบัตรได้ ภายในวันที่ xxxxxxxxxx </li>
+										 <ul style="list-style-type: none">
+											<li> <a href="<?= base_url('assets/pdf/commencement-schedule.pdf'); ?>" target="_blank" class="override-link"><i class="la la-file-pdf-o"></i> กำหนดการซ้อมรับพระราชทานปริญญาบัตร</a> </li>
+											<li> <a href="<?= base_url('assets/pdf/commencement-regulation.pdf'); ?>" target="_blank" class="override-link"><i class="la la-file-pdf-o"></i> ระเบียบการแต่งกายบัณฑิต มหาบัณฑิต และดุษฎีบัณฑิต</a></li>
 										</ul>
 
-                                       <h5>หมายเหตุ</h5>
+                                       <h5><strong>หมายเหตุ</strong></h5>
                                         <ul>
-                                            <li class="text-warning">บัณฑิตที่ยังไม่ได้รายงานตัวเข้ารับพระราชทานปริญญาบัตร มีความประสงค์จะเข้ารับฯ แจ้งความประสงค์ เพื่อรายงานตัวเข้ารับพระราชทานปริญญาบัตร <br> ได้ที่ กองพัฒนานักศึกษา อาคาร 2 ชั้น 3 มหาวิทยาลัยสวนดุสิต โทร. 02-244-5190-1 (ในวันเวลาราชการ) ภายในวันที่ 2 สิงหาคม 2565</li>
+                                            <li>
+                                            บัณฑิตที่ยังไม่ได้รายงานตัวเข้ารับพระราชทานปริญญาบัตร มีความประสงค์จะเข้ารับฯ แจ้งความประสงค์ เพื่อรายงานตัวเข้ารับพระราชทานปริญญาบัตร
+                                            ได้ที่ กองพัฒนานักศึกษา อาคาร 2 ชั้น 3 ห้อง 232 มหาวิทยาลัยสวนดุสิต โทร. 02-244-5190-1 (ในวันเวลาราชการ) <strong>หรือ inbox มาที่เพจ กองพัฒนานักศึกษา มหาวิทยาลัยสวนดุสิต </strong> ภายในวันที่ 6 กันยายน 2567
+                                            </li>
                                             <li>บัณฑิตที่ไม่ได้รายงานตัวภายในวันเวลาที่กำหนด ถือว่าสละสิทธิ์ ในการเข้ารับพระราชทานปริญญาบัตร</li>
-                                            <li>บัณฑิตที่รายงานตัวไม่เข้ารับพระราชทานปริญญาบัตร ข้อมูลจะไม่ปรากฎอยู่ในแบบสำรวจนี้</li>
                                             <li>ติดต่อศูนย์ตรัง โทร. 075-500-888 ต่อ 6818 หรือ 081-172-9599 คุณสุชาดา ศรีปล้อง</li>
                                             <li>ติดต่อศูนย์ลำปาง โทร. 081-980-2422 คุณณัฏฐวรรธน์ สุภาจันทรสุข</li>
                                         </ul>
@@ -150,7 +148,7 @@
         <script>
             var base_url = '<?php echo base_url(); ?>';
         </script>
-		<script src="<?= base_url('assets/js/metronic-login-65.js'); ?>" type="text/javascript"></script>
+		<script src="<?= base_url('assets/js/metronic-login-practice65.js'); ?>" type="text/javascript"></script>
 
 		<!--end::Page Scripts -->
 	</body>

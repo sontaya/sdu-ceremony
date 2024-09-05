@@ -39,7 +39,7 @@
 								<!-- begin:: Brand -->
 								<div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
 									<div class="kt-header__brand-logo">
-										<a href="<?= site_url('main/index'); ?>">
+										<a href="<?= site_url('process/index'); ?>">
 											<img alt="Logo" src="<?= base_url('assets/images/sdu-logo-full-h29.png') ?>" class="kt-header__brand-logo-default" />
 										</a>
 									</div>
@@ -59,7 +59,7 @@
 										<ul class="kt-menu__nav ">
 											<li class="kt-menu__item  kt-menu__item--open <?php if($active_tab == 'dashboard'){echo "kt-menu__item--here";} ?> kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
                                                 <a href="<?= site_url('main/index'); ?>" class="kt-menu__link">
-                                                    <span class="kt-menu__link-text">ยืนยันการเข้ารับพระราชทาน ปริญญาบัตร</span><i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                                    <span class="kt-menu__link-text">อัพโหลดภาพชุดครุย</span><i class="kt-menu__ver-arrow la la-angle-right"></i>
                                                 </a>
 
 											</li>
@@ -110,6 +110,14 @@
 
 								<!-- begin:: Content -->
 								<div class="kt-container  kt-grid__item kt-grid__item--fluid">
+
+                                    <!--begin::Debug-->
+                                    <?php
+                                        if(ENVIRONMENT == "development"){
+                                            include('_debug.php');
+                                        }
+                                    ?>
+                                    <!--end::Debug-->
 
                                     <?php echo $content; ?>
 

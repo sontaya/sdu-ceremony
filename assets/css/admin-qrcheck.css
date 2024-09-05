@@ -1,0 +1,16 @@
+.wrap-qrcode-scanner {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+#loadingMessage {
+    color: red;
+    font-weight: bold;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}

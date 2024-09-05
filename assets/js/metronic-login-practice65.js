@@ -69,7 +69,7 @@ var KTLoginV1 = function () {
                                     showErrorMsg(form, 'warning', 'ข้อมูลไม่ถูกต้อง กรุณาลองอีกครั้ง');
                         }, 500);
                     }else{
-                        window.location.href = base_url+'register';
+                        window.location.href = base_url+'process';
                     }
 
                     // if(response.uid != ""){

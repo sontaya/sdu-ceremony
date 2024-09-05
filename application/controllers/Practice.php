@@ -37,7 +37,7 @@ class Practice extends MY_Controller
 
             $practice_result = $this->Practice_model->get_practice_info(array('conditions'=>$conditions))[0];
 
-            $data['title'] = "กำหนดการรับพระราชทานปริญญาบัตร ประจำปี 2560 - 2562";
+            $data['title'] = "กำหนดการรับพระราชทานปริญญาบัตร ประจำปี 2565";
             $data['subheader_title'] = "subheader_title";
             $data['subheader_desc'] = "";
             $data['active_tab'] = 'dashboard';

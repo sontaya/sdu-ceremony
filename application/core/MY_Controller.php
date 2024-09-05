@@ -35,7 +35,7 @@ class MY_Controller extends CI_Controller
 		$this->aTemplate['header'] = $this->load->view('metronic_templates/header', $this->data, true);
 		$this->aTemplate['content'] = $this->load->view($this->content, $this->data, true);
 		$this->aTemplate['footer'] = $this->load->view('metronic_templates/footer', $this->data, true);
-		$this->load->view('metronic_templates/index-schedule', $this->aTemplate);
+		$this->load->view('metronic_templates/index-practice', $this->aTemplate);
 	}
 
     public function metronic_schedule_render()

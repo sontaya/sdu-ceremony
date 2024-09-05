@@ -60,3 +60,22 @@ html, body {
 .custom-error{
     color:red;
   }
+
+.kt-callout-custom{
+    padding: 0rem;
+}
+
+.override-link{
+    color:#ffffff;
+}
+
+.override-link:hover{
+    color:#ffb822;
+}
+
+/* .kt-callout-custom{
+    margin-top: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 0px;
+} */

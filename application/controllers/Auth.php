@@ -7,9 +7,8 @@ class Auth extends MY_Controller
 	{
 		parent::__construct();
 
-    // $this->load->model('Ceremony_model');
-    $this->load->model('Ceremony_model');
-    $this->load->model('Ceremonylog_model');
+    $this->load->model('Commencement_model');
+    $this->load->model('Commencementlog_model');
 
     // if(! $this->session->userdata('uid'))
     // {
@@ -44,7 +43,8 @@ class Auth extends MY_Controller
         'AUTH_IDCARD' => $this->input->post('passwd')
     );
 
-    $response = $this->Ceremony_model->list(array('conditions'=>$conditions));
+    $response = $this->Commencement_model->list(array('conditions'=>$conditions));
+
 
     if($response == false){
         header('Content-Type: application/json');
@@ -63,7 +63,7 @@ class Auth extends MY_Controller
             'CREATED_BY' => trim($response[0]["STD_CODE"]),
             'CREATED_BY_IP' => $client_ip
         );
-        $log_result = $this->Ceremonylog_model->save($log_data);
+        $log_result = $this->Commencementlog_model->save($log_data);
 
 
         $this->session->set_userdata('auth_session',$arraydata);
@@ -102,8 +102,8 @@ class Auth extends MY_Controller
   public function debug(){
     //   $this->load->view('demo/login_demo');
 
-    $username = 'phattaraphorn_run';
-    $passwd = 'admin@sdu';
+    $username = '56224450055';
+    $passwd = '1769900378859';
     $response = $this->Auth_model->login($username,$passwd);
     echo json_encode($response);
   }

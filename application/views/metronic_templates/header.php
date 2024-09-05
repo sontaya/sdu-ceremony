@@ -1,7 +1,7 @@
 	<head>
 		<base href="">
 		<meta charset="utf-8" />
-		<title> <?= $title ?> | แบบสำรวจบัณฑิตเพื่อเข้ารับพระราชทานปริญญาบัตร ประจำปี 2563-2564 </title>
+		<title> <?= $title ?> | Commencement Admin </title>
 		<meta name="description" content="Latest updates and statistic charts">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -24,6 +24,12 @@
 
         <link href="<?= base_url('assets/css/custom-metronic.css'); ?>" rel="stylesheet" type="text/css" />
 
+
+        <?php if(isset($cssSrc)){ ?>
+            <?php foreach($cssSrc as $css): ?>
+                <link href="<?= base_url(); ?><?= $css ?>" rel="stylesheet" type="text/css" />
+            <?php endforeach; ?>
+        <?php } ?>
 
 		<!--end::Layout Skins -->
 		<link rel="shortcut icon" href="<?php echo base_url('assets/images/logo-sdu-text-th.png'); ?>" />

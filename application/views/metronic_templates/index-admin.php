@@ -57,11 +57,20 @@
 								<div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
 									<div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile ">
 										<ul class="kt-menu__nav ">
-											<li class="kt-menu__item  kt-menu__item--open kt-menu__item--here kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="hover" aria-haspopup="true">
+
+											<li class="kt-menu__item  kt-menu__item--open kt-menu__item--here kt-menu__item--submenu kt-menu__item--rel" aria-haspopup="true">
                                                 <a href="<?= site_url('admin/index'); ?>" class="kt-menu__link">
-                                                    <span class="kt-menu__link-text">SUMMARY DASHBOARD</span><i class="kt-menu__ver-arrow la la-angle-right"></i>
+                                                    <span class="kt-menu__link-text">SUMMARY DASHBOARD</span></i>
                                                 </a>
 
+											</li>
+                                            <li class="kt-menu__item  kt-menu__item--open kt-menu__item--here kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Scan</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+												<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
+													<ul class="kt-menu__subnav">
+														<li class="kt-menu__item " aria-haspopup="true"><a href="<?= site_url('admin/scan'); ?>" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-architecture-and-city"></i><span class="kt-menu__link-text">Camera Scan</span></a></li>
+														<li class="kt-menu__item " aria-haspopup="true"><a href="<?= site_url('admin/scan_list'); ?>" class="kt-menu__link "><i class="kt-menu__link-icon flaticon2-crisp-icons"></i><span class="kt-menu__link-text">Scan Detail</span></a></li>
+													</ul>
+												</div>
 											</li>
 
 										</ul>
@@ -87,7 +96,7 @@
                                                 <?php
                                                     if($active_tab == 'dashboard'){
                                                 ?>
-                                                    <a href="<?php echo site_url('auth/logout'); ?>" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
+                                                    <a href="<?php echo site_url('admin/logout'); ?>" class="btn btn-label-primary btn-bold btn-icon-h kt-margin-l-10">
                                                         ออกจากระบบ
                                                     </a>
                                                 <?php }  ?>
@@ -119,7 +128,7 @@
 						<div class="kt-container ">
                             <div class="kt-footer__wrapper">
 								<div class="kt-footer__copyright">
-									2022&nbsp;&copy;&nbsp;<a href="http://www.dusit.ac.th" target="_blank" class="kt-link">มหาวิทยาลัยสวนดุสิต</a>
+									2024&nbsp;&copy;&nbsp;<a href="http://www.dusit.ac.th" target="_blank" class="kt-link">มหาวิทยาลัยสวนดุสิต</a>
 								</div>
                                 <div class="kt-footer--fixed">
 									ออกแบบและพัฒนาโดย ฝ่ายศูนย์ข้อมูลกลาง สำนักวิทยบริการและเทคโนโลยีสารสนเทศ

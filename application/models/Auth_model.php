@@ -51,4 +51,17 @@ class Auth_model extends CI_Model{
   }
 
 
+  function admin_list($params = array()){
+
+    if (!empty($params['conditions']['AUTH_HRCODE'])){
+        $auth_cond = "AND AA.HR_CODE = '". $params['conditions']['AUTH_HRCODE'] ."' AND AA.APP_STATUS = 'Y'";
+    }else{
+        $auth_cond = "";
+    }
+
+    $query = $this->db->query("SELECT * FROM GRADUATE_APP_ADMIN AA
+                            WHERE 1=1  $auth_cond ");
+    return ($query->num_rows() > 0)?$query->result_array():FALSE;
+}
+
 }
